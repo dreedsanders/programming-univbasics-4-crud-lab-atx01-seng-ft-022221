@@ -10,57 +10,48 @@ def create_an_array
 end
 
 
-def add_element_to_end_of_array
-  ["Wow", "I", "am", "really", "learning"]
-  
-add_element_to_end_of_array<< "arrays!"
+def add_element_to_end_of_array (array, element)
+  array << element
 
 end
   
 
-def add_element_to_start_of_array =  ["I", "am", "really", "learning"]
+def add_element_to_start_of_array (array, element)
+  array.unshift(element)
+end
+  
+
+def remove_element_from_end_of_array (array)
+  array.pop
    
-add_element_to_start_of_array.unshift "wow"
-end
-  
-
-def remove_element_from_end_of_array 
-  ["I", "am", "really", "learning", "arrays!"]
-  
-  arrays = remove_element_from_end_of_array.pop 
   end
 
 
-def remove_element_from_start_of_array
-  ["wow", "I", "am", "really", "learning", "arrays!" ]
-  wow=remove_element_from_start_of_array.shift
+def remove_element_from_start_of_array (array)
+  array.shift
+ 
   end
 
 
-def retrieve_element_from_index
-  ["wow", "I", "am", "really", "learning", "arrays!" ]
-
-retrieve_element_from_index[2]
+def retrieve_element_from_index (array, num)
+  array[num]
+ 
   end
 
 
-def retrieve_first_element_from_array
-  ["wow", "I", "am", "really", "learning", "arrays!" ]
+def retrieve_first_element_from_array (array)
+  array[0]
   
-  retrieve_first_element_from_array[0]
   end
 
 
-def retrieve_last_element_from_array
-  ["wow", "I", "am", "really", "learning", "arrays!" ]
+def retrieve_last_element_from_array (array)
+  array[-1]
 
-  
-  retrieve_last_element_from_array[-1]
   end
 
 
-def update_element_from_index
-  ["wow", "I", "am", "really", "learning", "arrays!" ]
+def update_element_from_index (array, num, newnum)
+  array[num]=newnum
   
-  update_element_from_index[4]="totally"
 end
